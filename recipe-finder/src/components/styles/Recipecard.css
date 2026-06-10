@@ -1,0 +1,31 @@
+.recipe-card{
+    background: #fff1;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+body.dark .recipe-card{
+    background-color: black;
+    color: white;
+}
+
+.recipe-card:hover{
+    transform: scale(1.05);
+}
+
+.recipe-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.recipe-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}

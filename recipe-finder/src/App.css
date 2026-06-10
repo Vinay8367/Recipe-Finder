@@ -1,0 +1,12 @@
+body{
+  font-family:  sans-serif;
+  margin: 0;
+  background-color: white;
+  color: #333;
+  transition: 0.3 ease;
+}
+
+body.dark{
+  background: #1e1e1e;
+  color: #fff;
+}

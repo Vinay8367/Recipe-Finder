@@ -1,0 +1,83 @@
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin: 20px auto;
+    padding: 10px;
+
+    max-width: 500px;
+}
+
+/* Input box */
+.input {
+    flex: 1;
+
+    padding: 12px 15px;
+
+    border: 2px solid #ddd;
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+}
+
+/* Focus effect */
+.input:focus {
+    border-color: #ff5722;
+    box-shadow: 0 0 8px rgba(255, 87, 34, 0.3);
+}
+
+/* Button */
+.btn {
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #ff5722;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.btn:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+}
+
+/* Active click effect */
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Dark mode support */
+body.dark form {
+    background: transparent;
+}
+
+body.dark .input {
+    background: #1e1e1e;
+    border: 2px solid #333;
+    color: white;
+}
+
+body.dark .input::placeholder {
+    color: #aaa;
+}
+
+body.dark .btn {
+    background: #333;
+    color: #fff;
+}

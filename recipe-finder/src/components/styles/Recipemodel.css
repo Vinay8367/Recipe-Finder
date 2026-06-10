@@ -1,0 +1,27 @@
+.food-meta {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.yt-button {
+    display: inline-block;
+    margin: 10px 0 15px;
+    padding: 10px 15px;
+
+    background: #ff0000;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.yt-button:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+}
